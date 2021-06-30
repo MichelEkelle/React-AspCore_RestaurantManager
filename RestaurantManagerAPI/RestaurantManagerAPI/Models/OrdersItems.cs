@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantManagerAPI.Models
 {
-    public class OrdersItems
+    public class OrdersItems: Entity
     {
         [Key]
         public int OrderItemID { get; set; }

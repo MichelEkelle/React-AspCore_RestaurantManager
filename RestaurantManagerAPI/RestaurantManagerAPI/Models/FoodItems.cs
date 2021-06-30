@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantManagerAPI.Models
 {
-    public class FoodItems
+    public class FoodItems : Entity
     {
         [Key]
         public int FoodID { get; set; }

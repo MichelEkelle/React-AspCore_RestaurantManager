@@ -7,10 +7,13 @@ using System.Threading.Tasks;
 
 namespace RestaurantManagerAPI.Models
 {
-    public class OrderMasters
+    public class OrderMasters: Entity
     {
         [Key]
         public int OrderMasterID { get; set; }
+
+        [Column(TypeName = "nvarchar(50)")] // permet de definir le type de string  vers  varchar
+        public string OrderNote { get; set; } // permet d'ajouter une note a la commande
 
         [Column(TypeName = "nvarchar(50)")] // permet de definir le type de string  vers  varchar
         public string OrderNumber { get; set; } // Id de la commande qui sera visible par le client

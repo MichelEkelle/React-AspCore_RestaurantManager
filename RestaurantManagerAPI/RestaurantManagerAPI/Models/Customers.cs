@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantManagerAPI.Models
 {
-    public class Customers
+    public class Customers: Entity
     {
         [Key] //permet de definir cet attribut comme cle
         public int CustomerID { get; set; }
